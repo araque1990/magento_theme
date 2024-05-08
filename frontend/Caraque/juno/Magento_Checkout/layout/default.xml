@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="cart.summary">
+            <!--<container name="store-hours-container" htmlTag="div" htmlId="store-hours-container" // This works correctly but I need to comment this block in order to do an exercise
+                       after="-">
+                <block name="store-hours" template="Juno_Theme::store-hours.phtml"
+                       ifconfig="general/store_information/hours">
+                    <arguments>
+                        <argument name="store_hours_view_model" xsi:type="object">Juno\Theme\ViewModel\StoreHours
+                        </argument>
+                    </arguments>
+                </block>
+            </container>
+            <container name="phone-number-container" htmlTag="div" htmlId="phone-number-container"
+                       after="store-hours-container">
+                <block name="phone-number" template="Juno_Theme::phone-number.phtml"
+                       ifconfig="general/store_information/phone">
+                    <arguments>
+                        <argument name="phone_number_view_model" xsi:type="object">Juno\Theme\ViewModel\PhoneNumber
+                        </argument>
+                    </arguments>
+                </block>
+            </container>-->
+            <container name="shipping-notice-container" htmlClass="shipping-notice-container" htmlTag="div"
+                       htmlId="shipping-notice-container" after="-">
+                <block name="shipping-notice" template="Juno_Theme::shipping-notice.phtml">
+                </block>
+            </container>
+        </referenceContainer>
+    </body>
+</page>

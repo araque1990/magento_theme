@@ -1,0 +1,13 @@
+& when (@media-common = true) {
+    .data.switch .counter {
+        &:before {
+            content: '[';
+        }
+
+        &:after {
+            content: ']';
+        }
+    }
+}
+
+// I have removed the _module.less file I had created before in this directory, in order to extend the existing module style instead of override it.
